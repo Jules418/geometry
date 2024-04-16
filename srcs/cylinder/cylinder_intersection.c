@@ -6,7 +6,7 @@
 /*   By: jules <jules@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 15:25:59 by jules             #+#    #+#             */
-/*   Updated: 2024/04/16 15:48:57 by jules            ###   ########.fr       */
+/*   Updated: 2024/04/16 20:56:54 by jules            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,6 @@ float	filter_hit_points(t_ray ray, t_cylinder cy, float coefs[6])
 float	sides_intersection(t_ray ray, t_cylinder cy)
 {
 	t_vec3	oc;
-	t_vec3	hit_point;
 	float	coefs[6];
 
 	oc = sub(ray.origin, cy.pos);
