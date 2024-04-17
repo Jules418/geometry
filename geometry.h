@@ -6,7 +6,7 @@
 /*   By: jules <jules@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 21:40:26 by jules             #+#    #+#             */
-/*   Updated: 2024/04/16 15:45:56 by jules            ###   ########.fr       */
+/*   Updated: 2024/04/17 15:45:29 by jules            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@
 # include "cylinder.h"
 
 # define EPSILON 0.0001f
+# define V_ZERO (t_vec3){0.f, 0.f, 0.f}
 
 #endif
