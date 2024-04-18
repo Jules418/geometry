@@ -15,7 +15,7 @@ RM					=	rm -rf
 AR					=	ar rcs
 CC					=	gcc
 
-VECTOR_PATH			=	vector/
+VECTOR_PATH			=	../vector/
 VECTOR_INCLUDES		=	$(VECTOR_PATH)
 VECTOR_L			=	-L $(VECTOR_PATH)/vector.a
 VECTOR_A			=	$(VECTOR_PATH)vector.a
