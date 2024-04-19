@@ -1,4 +1,4 @@
-NAME = geometry.a
+NAME = libgeometry.a
 
 include config/srcs.mk
 SRC_PATH			=	srcs/
@@ -17,8 +17,8 @@ CC					=	gcc
 
 VECTOR_PATH			=	../vector/
 VECTOR_INCLUDES		=	$(VECTOR_PATH)
-VECTOR_L			=	-L $(VECTOR_PATH)/vector.a
-VECTOR_A			=	$(VECTOR_PATH)vector.a
+VECTOR_L			=	-L $(VECTOR_PATH) -l vector
+VECTOR_A			=	$(VECTOR_PATH)libvector.a
 MAKE_VECTOR			=	$(MAKE) -C $(VECTOR_PATH)
 
 DIR_INCS =\
@@ -71,4 +71,4 @@ rre:	ffclean
 -include $(DEPS)
 $(DIR_BUILD)%.o : $(SRC_PATH)%.c Makefile
 			@mkdir -p $(shell dirname $@)
-			$(CC) $(FLAGS) $(DEPS_FLAGS) $(LIBS) $(INCLUDES) -c $< -o $@
+			$(CC) $(FLAGS) $(DEPS_FLAGS) $(INCLUDES) -c $< -o $@

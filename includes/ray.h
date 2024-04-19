@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ray.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jules <jules@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jbanacze <jbanacze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 00:24:38 by jules             #+#    #+#             */
-/*   Updated: 2024/04/16 10:07:48 by jules            ###   ########.fr       */
+/*   Updated: 2024/04/19 03:10:59 by jbanacze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef RAY_H
 # define RAY_H
 
-# include "geometry.h"
+# include "vector.h"
 
 typedef struct s_ray
 {

@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   sphere.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jules <jules@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jbanacze <jbanacze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 22:14:49 by jules             #+#    #+#             */
-/*   Updated: 2024/04/16 11:08:50 by jules            ###   ########.fr       */
+/*   Updated: 2024/04/19 03:25:41 by jbanacze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "sphere.h"
 #include <math.h>
+#include <stdio.h>
 
 t_sphere	create_sphere(t_vec3 pos, float radius)
 {
@@ -46,4 +47,12 @@ float	sphere_intersection(t_ray ray, t_sphere sp)
 	if (t > 0.f)
 		return (t);
 	return (-1.f);
+}
+
+t_vec3	normal_sphere(t_sphere s, t_vec3 hit)
+{
+	t_vec3	normal_vec;
+
+	normal_vec = sub(hit, s.pos);
+	return (normalized(normal_vec));
 }
